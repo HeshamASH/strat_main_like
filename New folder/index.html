@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StratML - Strategic Plan Markup Language</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-4 text-center;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto;
+        }
+        .card {
+            @apply bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .nav-link {
+            @apply text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium px-3 py-2 rounded-md text-sm;
+        }
+        .nav-link.active {
+            @apply bg-blue-50 text-blue-600 font-semibold;
+        }
+        .cta-button {
+            @apply bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1;
+        }
+        .link-list a {
+            @apply text-blue-600 hover:underline;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                Strat<span class="text-blue-600">ML</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-1" id="nav-menu">
+                <a href="#purposes" class="nav-link">Purposes</a>
+                <a href="#standard" class="nav-link">The Standard</a>
+                <a href="#current-work" class="nav-link">Current Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#see-also" class="nav-link">See Also</a>
+                <a href="#history" class="nav-link">History</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="lg:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+            <a href="#purposes" class="block py-2 px-6 text-sm hover:bg-gray-100">Purposes</a>
+            <a href="#standard" class="block py-2 px-6 text-sm hover:bg-gray-100">The Standard</a>
+            <a href="#current-work" class="block py-2 px-6 text-sm hover:bg-gray-100">Current Work</a>
+            <a href="#services" class="block py-2 px-6 text-sm hover:bg-gray-100">Services</a>
+            <a href="#see-also" class="block py-2 px-6 text-sm hover:bg-gray-100">See Also</a>
+            <a href="#history" class="block py-2 px-6 text-sm hover:bg-gray-100">History</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-6">
+                    A Worldwide Web of Intentions, Stakeholders, and Results
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                    The Strategic Plan Markup Language (StratML) is an XML vocabulary and schema for strategic plans, facilitating transparency, collaboration, and accountability.
+                </p>
+                <a href="#purposes" class="cta-button">Discover the Purpose</a>
+            </div>
+        </section>
+
+        <!-- Definition & Purposes Section -->
+        <section id="purposes" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Definition & Purposes</h2>
+                <p class="section-subtitle">StratML is designed to make strategic plans more accessible, interoperable, and actionable.</p>
+                <div class="max-w-4xl mx-auto card">
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Facilitate the sharing, referencing, discovery, and reuse of strategic plan elements.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Enable literal linkages for "strategic alignment" between goals, objectives, and business processes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Help discover potential performance partners with common or complementary objectives.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Facilitate stakeholder engagement, input, and feedback on strategic goals.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Make strategic planning more agile and responsive, preventing plans from becoming outdated "shelfware".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>Reduce redundant data entry and inconsistencies by referencing authoritative sources.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Mandates Section -->
+        <section id="mandates" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Supporting Open Government Mandates</h2>
+                <p class="section-subtitle">StratML provides a machine-readable format to help U.S. federal agencies comply with key legislation.</p>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">GPRA Modernization Act of 2010 (GPRAMA)</h3>
+                        <p>Section 10 requires agencies to publish their strategic and performance plans and reports in a searchable, machine-readable format. StratML is such a format.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">OPEN Government Data Act (OGDA)</h3>
+                        <p>Extends the requirement to all Federal records to be open, machine-readable, and compliant with standardized schemas by default.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Standard Section -->
+        <section id="standard" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">The StratML Standard in Three Parts</h2>
+                <p class="section-subtitle">The standard is broken down into three parts, covering strategic plans, performance reports, and additional elements for deeper integration.</p>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Part 1: Strategic Plans (ISO 17469-1)</h3>
+                        <p class="text-lg mb-4">Focuses on the core vocabulary for strategic plans: Vision, Mission, Values, Goals, and Objectives.</p>
+                        <div class="link-list space-x-4">
+                            <a href="https://stratml.us/references/PerformancePlanOrReport20150211.xsd" target="_blank" rel="noopener noreferrer">ISO Schema</a>
+                            <a href="https://stratml.us/iso/17469-1/index.html" target="_blank" rel="noopener noreferrer">Schema Documentation</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Part 2: Performance Plans & Reports</h3>
+                        <p class="text-lg mb-4">Extends Part 1 to include performance indicators and stakeholder roles, enabling the documentation of value chains and tracking of results.</p>
+                        <div class="link-list space-x-4">
+                            <a href="https://stratml.us/references/PerformancePlanOrReport20160216.xsd" target="_blank" rel="noopener noreferrer">ANSI/AIIM 22:2017 Schema</a>
+                            <a href="https://stratml.us/part2/2017/doc/index.html" target="_blank" rel="noopener noreferrer">Documentation</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Part 3: Additional Elements</h3>
+                        <p class="text-lg mb-4">Specifies additional elements to address the data requirements implicit in GPRAMA, focusing on deeper integration with performance data.</p>
+                        <div class="link-list space-x-4">
+                            <a href="https://stratml.us/references/StratML-part3-20140821.xsd" target="_blank" rel="noopener noreferrer">Schema (AIIM_BP_24-2014)</a>
+                            <a href="https://stratml.us/part3/20150625/doc/index.html" target="_blank" rel="noopener noreferrer">HTML Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Work Section -->
+        <section id="current-work" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Current Work & Results</h2>
+                <p class="section-subtitle">Ongoing projects and results from the StratML community's efforts.</p>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Development & Services</h3>
+                        <div class="link-list space-y-3">
+                            <p><strong>MS Word Add-on:</strong> Ambar Shome is working on a StratML template/add-on for Microsoft Word.</p>
+                            <p><strong>Query Service:</strong> Naval Sarda of Epicomm Technologies has managed development of a StratML-enabled query service at <a href="http://search.aboutthem.info/" target="_blank" rel="noopener noreferrer">Search.AboutThem.info</a>.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Draft Listings & Resources</h3>
+                        <div class="link-list space-y-3">
+                            <p><a href="https://stratml.us/Use_Cases.pdf" target="_blank" rel="noopener noreferrer">Use Cases for the StratML standard (PDF)</a></p>
+                            <p><a href="https://stratml.us/Tools_Apps_Services.pdf" target="_blank" rel="noopener noreferrer">Tools, Apps & Services required (PDF)</a></p>
+                            <p><a href="https://stratml.us/Training_Resources.htm" target="_blank" rel="noopener noreferrer">Training Resources</a></p>
+                            <p><a href="https://stratml.us/Glossary.htm" target="_blank" rel="noopener noreferrer">StratML Glossary</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Federal Agency Plan Conversions</h3>
+                    <p class="text-center mb-6">In response to GPRAMA, Owen Ambur has converted numerous federal agency strategic plans to the StratML format. The full collection contains over 5,800 files.</p>
+                    <div class="link-list grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-2 text-sm">
+                        <a href="https://stratml.us/federal/stratml/USDA2022.xml" target="_blank">Agriculture (USDA)</a>
+                        <a href="https://stratml.us/federal/stratml/DOC2022.xml" target="_blank">Commerce (DOC)</a>
+                        <a href="https://stratml.us/federal/stratml/ED2022.xml" target="_blank">Education (ED)</a>
+                        <a href="https://stratml.us/federal/stratml/HHS2022.xml" target="_blank">Health & Human Services (HHS)</a>
+                        <a href="https://stratml.us/federal/stratml/DHS2020.xml" target="_blank">Homeland Security (DHS)</a>
+                        <a href="https://stratml.us/federal/stratml/HUD2022.xml" target="_blank">Housing & Urban Dev (HUD)</a>
+                        <a href="https://stratml.us/federal/stratml/DOI2022.xml" target="_blank">Interior (DOI)</a>
+                        <a href="https://stratml.us/federal/stratml/DOJ2022.xml" target="_blank">Justice (DOJ)</a>
+                        <a href="https://stratml.us/federal/stratml/DOL2022.xml" target="_blank">Labor (DOL)</a>
+                        <a href="https://stratml.us/federal/stratml/DOS-USAID2022.xml" target="_blank">State (DOS) & USAID</a>
+                        <a href="https://stratml.us/federal/stratml/DOT2022.xml" target="_blank">Transportation (DOT)</a>
+                        <a href="https://stratml.us/federal/stratml/TREAS2022.xml" target="_blank">Treasury (TREAS)</a>
+                        <a href="https://stratml.us/federal/stratml/VA2022.xml" target="_blank">Veterans Affairs (VA)</a>
+                        <a href="https://stratml.us/federal/stratml/EPA2022.xml" target="_blank">EPA</a>
+                        <a href="https://stratml.us/federal/stratml/GSA2022.xml" target="_blank">GSA</a>
+                        <a href="https://stratml.us/federal/stratml/GAO2022.xml" target="_blank">GAO</a>
+                        <a href="https://stratml.us/federal/stratml/GPO2023.xml" target="_blank">GPO</a>
+                        <a href="https://stratml.us/federal/stratml/NASA2022.xml" target="_blank">NASA</a>
+                        <a href="https://stratml.us/federal/stratml/NARA2022.xml" target="_blank">NARA</a>
+                        <a href="https://stratml.us/federal/stratml/NSF2022.xml" target="_blank">NSF</a>
+                        <a href="https://stratml.us/federal/stratml/NRC2022.xml" target="_blank">NRC</a>
+                        <a href="https://stratml.us/federal/stratml/OPM2022.xml" target="_blank">OPM</a>
+                        <a href="https://stratml.us/federal/stratml/SBA2022.xml" target="_blank">SBA</a>
+                        <a href="https://stratml.us/federal/stratml/SSA2022.xml" target="_blank">SSA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Prototype Services & Tools</h2>
+                <p class="section-subtitle">A variety of tools and services have been developed by the community to support the creation, editing, and analysis of StratML documents.</p>
+                <div class="card max-w-5xl mx-auto link-list">
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li><strong>StratNavApp</strong> - Chris Fox enabled his <a href="https://www.stratnavapp.com/" target="_blank">StratNavApp</a> to produce valid StratML output. Public plans are available <a href="https://www.stratnavapp.com/Project/PublicStratMLList" target="_blank">here</a>.</li>
+                        <li><strong>Turn-Key Systems</strong> - StratML files can be rendered in PDF and other formats using <a href="https://www.orbis-spec.com/products/topleaf" target="_blank">TopLeaf XML Publisher</a>.</li>
+                        <li><strong>Vionta</strong> - Jorge Sanchez of Vionta began to develop a StratML portal running on BaseX. It is documented on <a href="https://github.com/jorgesanchez/stratml.us" target="_blank">GitHub</a>.</li>
+                        <li><strong>Ximdex</strong> - Colleagues at Ximdex imported many files into their StratML <a href="http://stratml.ximdex.com/prototype" target="_blank">query service prototype</a>.</li>
+                        <li><strong>Ictect</strong> - Pradeep Jain of Ictect expressed interest in updating his StratML plug-in for MS Word. A <a href="https://stratml.us/Ictect/StratML_Tagging_with_MS_Word-Quick_Start_Guide_20090925.pdf" target="_blank">Quick Start Guide</a> remains available.</li>
+                        <li><strong>01 Communications</strong> - Andre Cusson of 01Communications has expressed intent to restore and update his StratML portal. See his <a href="http://dnaos.com/index.php/2-uncategorised/32-stratml-related-efforts" target="_blank">related efforts</a>.</li>
+                        <li><strong>Joe Carmel</strong> - Joe Carmel's StratML Catalog used AJAX to index files. The most recent update is available on the <a href="https://stratml.us/sitemap/index.htm" target="_blank">StratML.us site</a>.</li>
+                        <li><strong>StratML.services</strong> - Jason Lind planned to make <a href="http://stratml.services/" target="_blank">StratML.services</a> an extensive platform, though the effort has apparently been abandoned.</li>
+                        <li><strong>RUSTPrivacy</strong> - Gannon Dick of <a href="http://rustprivacy.org/" target="_blank">RUSTPrivacy.org</a> converted the Federal Advisory Committee Act (FACA) database to StratML format. See the <a href="http://faca.rustprivacy.org/" target="_blank">home page</a> for his related efforts.</li>
+                        <li><strong>oXygen</strong> - Support for the StratML standard was provided in <a href="https://www.oxygenxml.com/" target="_blank">oXygen XML Editor</a> version 14.0. The framework is available as an <a href="https://github.com/oxygenxml/stratml" target="_blank">open source project</a> on GitHub.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also Section -->
+        <section id="see-also" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">See Also</h2>
+                <p class="section-subtitle">Explore related resources, publications, and external links for a deeper understanding of strategic planning and related standards.</p>
+                <div class="card max-w-5xl mx-auto">
+                    <div class="space-y-6 link-list">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Community & News</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>AIIM's Community Portal:</strong> <a href="http://community.aiim.org/communities/community-home?CommunityKey=1751334f-9e86-4b84-8536-64157548a745" target="_blank">StratML Tech Group</a> | <a href="http://community.aiim.org/communities/community-home?CommunityKey=b901a073-b929-45f6-8d19-53b70e7f7584" target="_blank">Announcements Group</a></li>
+                                <li><strong>GAO's Scorecard:</strong> <a href="https://stratml.us/GAO/scorecard.pdf" target="_blank">For evaluating strategic plans</a></li>
+                                <li><strong>News Coverage:</strong> <a href="https://gcn.com/search?q=StratML" target="_blank">GCN</a> | <a href="https://fcw.com/search?q=StratML" target="_blank">FCW</a> | <a href="https://washingtontechnology.com/search?q=StratML" target="_blank">Washington Technology</a></li>
+                                <li><strong>Search Engines:</strong> <a href="https://search.usa.gov/search?affiliate=gsa_insite&query=StratML" target="_blank">USA.gov</a> | <a href="https://www.google.com/search?q=StratML" target="_blank">Google</a> | <a href="https://www.bing.com/search?q=StratML" target="_blank">Bing</a></li>
+                            </ul>
+                        </div>
+                        <div class="border-t pt-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Related Wikipedia Articles</h3>
+                            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+                                <a href="https://en.wikipedia.org/wiki/StratML" target="_blank">StratML</a>
+                                <a href="https://en.wikipedia.org/wiki/Machine-readable_document" target="_blank">Machine-Readable Documents</a>
+                                <a href="https://en.wikipedia.org/wiki/Strategic_planning" target="_blank">Strategic Planning</a>
+                                <a href="https://en.wikipedia.org/wiki/Strategy" target="_blank">Strategy</a>
+                                <a href="https://en.wikipedia.org/wiki/Stakeholder_(corporate)" target="_blank">Stakeholder</a>
+                                <a href="https://en.wikipedia.org/wiki/Theory_of_value_(economics)" target="_blank">Theory of Value</a>
+                                <a href="https://en.wikipedia.org/wiki/Value_theory" target="_blank">Value Theory</a>
+                                <a href="https://en.wikipedia.org/wiki/Utility" target="_blank">Utility</a>
+                                <a href="https://en.wikipedia.org/wiki/Management" target="_blank">Management</a>
+                                <a href="https://en.wikipedia.org/wiki/Strategic_management" target="_blank">Strategic Management</a>
+                                <a href="https://en.wikipedia.org/wiki/Program_evaluation" target="_blank">Program Evaluation</a>
+                                <a href="https://en.wikipedia.org/wiki/Performance_indicator" target="_blank">Performance Indicators</a>
+                                <a href="https://en.wikipedia.org/wiki/SMART_criteria" target="_blank">SMART</a>
+                                <a href="https://en.wikipedia.org/wiki/SWOT_analysis" target="_blank">SWOT & PEST Analyses</a>
+                                <a href="https://en.wikipedia.org/wiki/Critical_success_factor" target="_blank">Critical Success Factor</a>
+                                <a href="https://en.wikipedia.org/wiki/Business_plan" target="_blank">Business Plan</a>
+                                <a href="https://en.wikipedia.org/wiki/Integrated_business_planning" target="_blank">Integrated Business Planning</a>
+                                <a href="https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development" target="_blank">Group Development</a>
+                                <a href="https://en.wikipedia.org/wiki/Coaching" target="_blank">Coaching</a>
+                                <a href="https://en.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank">XML</a>
+                                <a href="https://en.wikipedia.org/wiki/Markup_language" target="_blank">Markup Languages</a>
+                                <a href="https://en.wikipedia.org/wiki/Artificial_language" target="_blank">Artificial Language</a>
+                                <a href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)" target="_blank">XML Schema</a>
+                            </div>
+                        </div>
+                        <div class="border-t pt-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Additional Reading & Models</h3>
+                             <ul class="list-disc list-inside space-y-2">
+                                <li><a href="https://www.businessrulesgroup.org/bmm.shtml" target="_blank">Business Rules Group's Business Motivation Model</a></li>
+                                <li><a href="https://stratml.us/GAO/model.pdf" target="_blank">A proposed high-level model for strategic planning</a></li>
+                                <li><a href="https://stratml.us/references/Bryson-Perspectives_on_SP_in_Public_Sector.pdf" target="_blank">Perspectives on Strategic Planning in the Public Sector (Monograph)</a></li>
+                                <li><a href="https://stratml.us/references/Bryson-Stakeholder_identification_and_analysis_techniques.pdf" target="_blank">Stakeholder analysis techniques (Article)</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">History of StratML</h2>
+                <p class="section-subtitle">The Strategic Plan Markup Language has a long and detailed history of development and collaboration.</p>
+                <a href="https://stratml.us/history/index.htm" target="_blank" rel="noopener noreferrer" class="cta-button">Read the Full History</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get Involved</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-gray-300">
+                For more information, to join the community, or to provide feedback, please reach out.
+            </p>
+            <a href="mailto:owen.ambur@gmail.com" class="cta-button bg-white text-blue-600 hover:bg-gray-100">Contact Us</a>
+            <div class="mt-10 border-t border-gray-700 pt-8">
+                <p class="text-gray-400">&copy; 2024 StratML Community. All Rights Reserved.</p>
+                <p class="text-sm text-gray-500 mt-2">Content sourced from stratml.us</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Active navigation link highlighting on scroll
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('#nav-menu a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
